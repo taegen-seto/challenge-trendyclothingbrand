@@ -32,7 +32,12 @@
         );
         background-size: cover;
         background-repeat: no-repeat;
+        background-color: black;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
       }
+
       header {
         text-align: center;
         margin: 50px;
@@ -45,15 +50,53 @@
         padding: 50px;
         text-align: center;
       }
+      section {
+        margin: 50px 0;
+      }
       footer {
+        color: rgba(255, 255, 255, 0.5);
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/070/original/pinkcroc.png?1708392626");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        padding: 200px;
         text-align: center;
-        margin: 50px;
+        letter-spacing: 2px;
+        margin: 20px 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      footer a {
+        color: #c01a81;
+        letter-spacing: 3px;
+      }
+      footer a:hover {
+        text-decoration: underline;
+        color: #f6b720;
       }
       .header-img {
         border-radius: 6px;
       }
+      .footer-img {
+        max-width: 100%;
+      }
+      .icon {
+        color: #f6b720;
+      }
+      .back-to-top {
+        font-size: 18px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #f6b720;
+      }
     </style>
   </head>
+  <a name="top"></a>
   <body>
     <header>
       <img
@@ -71,6 +114,8 @@
         target="_blank"
         >coded by Taegen Seto for SheCodes "Trendy Clothing Brand Challenge"</a
       >
+      <br />
+      <i class="fa-brands fa-github icon"></i>
       <a
         href="https://github.com/taegen-seto/challenge-trendyclothingbrand"
         title="GitHub repository"
@@ -78,6 +123,7 @@
       >
         open-sourced on GitHub</a
       >
+      <i class="fa-solid fa-globe icon"></i>
       <a
         href="https://gorgeous-pegasus.netlify.app/"
         title="Netlify"
@@ -85,5 +131,8 @@
         >hosted on Netlify</a
       >
     </footer>
+    <section>
+      <a href="#top" class="back-to-top">· back to top ·</a>
+    </section>
   </body>
 </html>
